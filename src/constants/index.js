@@ -1,3 +1,3 @@
-import DROP_DOWNS from "./Dropdowns";
+import DROP_DOWN_OPTIONS from "./DropdownOptions";
 
-export { DROP_DOWNS };
+export { DROP_DOWN_OPTIONS };

@@ -4,9 +4,13 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const Dropdown = ({ options = [], onSelect }) => {
+  // State To track option is open or not based on that we will show dropdown
   const [isOpen, setIsOpen] = useState(false);
+
+  // State to hold the current selected option
   const [selectedOption, setSelectedOption] = useState(null);
 
+  // function to handle when user selects any option
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     onSelect(option.value);
@@ -29,6 +33,7 @@ const Dropdown = ({ options = [], onSelect }) => {
         </span>
         <ChevronDownIcon className="font-bold h-7 w-7" />
       </button>
+
       {isOpen && (
         <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded-md shadow-md font-semibold text-xl">
           {options.map((option) => (

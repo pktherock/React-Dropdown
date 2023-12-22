@@ -1,4 +1,4 @@
-const DROP_DOWNS = [
+const DROP_DOWN_OPTIONS = [
   {
     value: "YES",
     label: "Yes",
@@ -17,4 +17,4 @@ const DROP_DOWNS = [
   },
 ];
 
-export default DROP_DOWNS;
+export default DROP_DOWN_OPTIONS;
